@@ -9,7 +9,7 @@ NOTA: Do not forget to change the parameters.js file -> getURLParameters functio
 */
 //bUILD LOCAL DESA
 
-
+/*
 const env = {
   ROOT: "dist/css/",
   CSSDIRECTORY: 'dist/css/',
@@ -23,7 +23,7 @@ const env = {
   BUILDFOR: 'INTERNA',
   SSL: 'http://'
 }
-
+*/
 
 
 
@@ -62,7 +62,7 @@ const env = {
 */
 
 //BUILD EXTERNA PROD PARA VENTA SERVICIOS
-/*
+
 var env = {
 	  ROOT: "css/",
 	  CSSDIRECTORY: 'css/',
@@ -76,11 +76,11 @@ var env = {
 	  WPHP: "https://ventaservicios.chilquinta.cl/online/getParametros.php",
     SSL: 'https://'
 	};
-*/
 
 
 
-//BUILD EXTERNA PROD PARA VENTA SERVICIOS
+
+//BUILD EXTERNA desa PARA VENTA SERVICIOS
 /*
 const env = {
   ROOT: "css/",
