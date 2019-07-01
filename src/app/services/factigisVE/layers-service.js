@@ -20,10 +20,11 @@ function myLayers(){
   var serviceMain;
   var serviceURL;
 
+  //Si es con SSL, cambiar 5555, por 6443
   if(env.BUILDFOR=="INTERNA"){
     serviceMain = env.SSL+'gisredint.chilquinta.cl/arcgis/';
   }else{
-    serviceMain =  env.SSL+'gisred.chilquinta.cl:6443/arcgis/';
+    serviceMain =  env.SSL+'gisred.chilquinta.cl:5555/arcgis/';
   }
    serviceURL = serviceMain + 'rest/services/';
   //check 8 and last one

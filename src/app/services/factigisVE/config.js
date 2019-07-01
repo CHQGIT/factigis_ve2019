@@ -23,8 +23,8 @@ const env = {
   BUILDFOR: 'INTERNA',
   SSL: 'http://'
 }
-*/
 
+*/
 
 
 //BUILD EXTERNA DESA
@@ -61,8 +61,25 @@ const env = {
 }
 */
 
-//BUILD EXTERNA PROD PARA VENTA SERVICIOS
+//BUILD EXTERNA PROD PARA VENTA SERVICIOS - sin ssl
 
+var env = {
+	  ROOT: "css/",
+	  CSSDIRECTORY: 'css/',
+	  ROUTEPATH: '/factigisVE',
+	  ENVIRONMENT: 'PRODUCTION',
+	  WEBSERVERADDRESS: "http://gisred.chilquinta.cl:5555/factigisVE/",
+	  SAVEAPPLICATIONMODULE: "FACTIGIS_PROD",
+	  SAVEAPPLICATIONNAME: 'REACT_FACTIGISVE_PROD',
+	  BUILDFOR: 'EXTERNA',
+	  ROOT2: "http://ventaservicios.chilquinta.cl/factigisVE/",
+	  WPHP: "http://ventaservicios.chilquinta.cl/online/getParametros.php",
+    SSL: 'http://'
+	};
+
+
+//BUILD EXTERNA PROD PARA VENTA SERVICIOS - con ssl
+/*
 var env = {
 	  ROOT: "css/",
 	  CSSDIRECTORY: 'css/',
@@ -76,8 +93,7 @@ var env = {
 	  WPHP: "https://ventaservicios.chilquinta.cl/online/getParametros.php",
     SSL: 'https://'
 	};
-
-
+*/
 
 
 //BUILD EXTERNA desa PARA VENTA SERVICIOS
