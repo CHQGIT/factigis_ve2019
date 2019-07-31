@@ -1,6 +1,6 @@
 /*
-Compilated(transpilated): 17-07-2019
-factigisVE  : v1.6p
+Compilated(transpilated): 1-08-2019
+factigisVE  : v1.7p
 Author: Evelyn Hernandez
 */
 
@@ -27,24 +27,39 @@ const env = {
 */
 
 
-//BUILD EXTERNA DESA
-/*
-const env = {
-  ROOT: "dist/css/",
-  CSSDIRECTORY: 'dist/css/',
+//BUILD DESARROLLO VENTAS2
+/*const env = {
+  ROOT: "css/",
+  CSSDIRECTORY: 'css/',
   ROUTEPATH: '/factigisVE',
-  ENVIRONMENT: 'DEVELOPMENT',
-  WEBSERVERADDRESS: "http://gisred.chilquinta.cl:6443/factigisVE/",
+  ENVIRONMENT: 'PRODUCTION', //debido a la url externa que se requiere para cerrar la ventana.
+  WEBSERVERADDRESS: "https://gisred.chilquinta.cl:6443/factigisVE/",
   SAVEAPPLICATIONMODULE: "FACTIGIS_DESA",
-  SAVEAPPLICATIONNAME: 'REACT_AP_WEB_DESA',
+  SAVEAPPLICATIONNAME: 'REACT_FACTIGISVE_DESA',
   BUILDFOR: 'EXTERNA',
-  ROOT2: "http://ventasbeta.chilquinta.cl/factigisVE/",
-  WPHP: "http://ventasbeta.chilquinta.cl/online/getParametros.php",
-  SSL: 'http://'
+  ROOT2: "http://ventas2.pruebas/factigisve/",
+  WPHP: "http://ventas2.pruebas/online/getParametros.php",
+  SSL: 'https://'
 }
 */
+//BUILD PRODUCCION VS Y FACTIGIS VE
 
-//BUILD EXTERNA DESA PARA SERVIDOR DESA GISRED
+const env = {
+  ROOT: "css/",
+  CSSDIRECTORY: 'css/',
+  ROUTEPATH: '/factigisVE',
+  ENVIRONMENT: 'PRODUCTION', //debido a la url externa que se requiere para cerrar la ventana.
+  WEBSERVERADDRESS: "https://gisred.chilquinta.cl:6443/factigisVE/",
+  SAVEAPPLICATIONMODULE: "FACTIGIS_PROD",
+  SAVEAPPLICATIONNAME: 'REACT_FACTIGISVE_PROD',
+  BUILDFOR: 'EXTERNA',
+  ROOT2: "http://ventaservicios.chilquinta/factigisve/",
+  WPHP: "http://ventaservicios.pruebas/online/getParametros.php",
+  SSL: 'https://'
+}
+
+
+//BUILD DESARROLLO PARA SERVIDOR GISRED
 /*
 const env = {
   ROOT: "css/",
@@ -61,86 +76,5 @@ const env = {
 }
 */
 
-//BUILD EXTERNA PROD PARA VENTA SERVICIOS - sin ssl
-
-var env = {
-	  ROOT: "css/",
-	  CSSDIRECTORY: 'css/',
-	  ROUTEPATH: '/factigisVE',
-	  ENVIRONMENT: 'PRODUCTION',
-	  WEBSERVERADDRESS: "http://gisred.chilquinta.cl:5555/factigisVE/",
-	  SAVEAPPLICATIONMODULE: "FACTIGIS_PROD",
-	  SAVEAPPLICATIONNAME: 'REACT_FACTIGISVE_PROD',
-	  BUILDFOR: 'EXTERNA',
-	  ROOT2: "http://ventaservicios.chilquinta.cl/factigisVE/",
-	  WPHP: "http://ventaservicios.chilquinta.cl/online/getParametros.php",
-    SSL: 'http://'
-	};
-
-
-//BUILD EXTERNA PROD PARA VENTA SERVICIOS - con ssl
-/*
-var env = {
-	  ROOT: "css/",
-	  CSSDIRECTORY: 'css/',
-	  ROUTEPATH: '/factigisVE',
-	  ENVIRONMENT: 'PRODUCTION',
-	  WEBSERVERADDRESS: "https://gisred.chilquinta.cl:6443/factigisVE/",
-	  SAVEAPPLICATIONMODULE: "FACTIGIS_PROD",
-	  SAVEAPPLICATIONNAME: 'REACT_FACTIGISVE_PROD',
-	  BUILDFOR: 'EXTERNA',
-	  ROOT2: "https://ventaservicios.chilquinta.cl/factigisVE/",
-	  WPHP: "https://ventaservicios.chilquinta.cl/online/getParametros.php",
-    SSL: 'https://'
-	};
-*/
-
-
-//BUILD EXTERNA desa PARA VENTA SERVICIOS
-/*
-const env = {
-  ROOT: "css/",
-  CSSDIRECTORY: 'css/',
-  ROUTEPATH: '/FactigisVE',
-  ENVIRONMENT: 'PRODUCTION', //debido a la url externa que se requiere para cerrar la ventana.
-  WEBSERVERADDRESS: "https://gisred.chilquinta.cl:6443/factigisVE/",
-  SAVEAPPLICATIONMODULE: "FACTIGIS_DESA",
-  SAVEAPPLICATIONNAME: 'REACT_FACTIGISVE_DESA',
-  BUILDFOR: 'EXTERNA',
-  ROOT2: "http://ventaservicios.pruebas/factigisve/",
-  WPHP: "http://ventaservicios.pruebas/online/getParametros.php",
-  SSL: 'https://'
-}
-*/
-
-//bUILD INTERNA PROD
-/*
-const env = {
-  ROOT: "css/",
-  CSSDIRECTORY: 'css/',
-  ROUTEPATH: 'pruebasfactigis/factigisVE',
-  ENVIRONMENT: 'PRODUCTION',
-  WEBSERVERADDRESS: "http://gisred.chilquinta/pruebasfactigis/factigisVE/",
-  SAVEAPPLICATIONMODULE: "FACTIGIS_PROD",
-  SAVEAPPLICATIONNAME: 'REACT_FACTIGISVE_PROD',
-  BUILDFOR: 'INTERNA',
-  SSL: 'http://'
-}
-*/
-
-//bUILD INTERNA DESA
-/*
-const env = {
-  ROOT: "css/",
-  CSSDIRECTORY: 'css/',
-  ROUTEPATH: 'pruebasfactigis/factigisVE',
-  ENVIRONMENT: 'DEVELOPMENT',
-  WEBSERVERADDRESS: "http://gisred.chilquinta/pruebasfactigis/factigisVE/",
-  SAVEAPPLICATIONMODULE: "FACTIGIS_DESA",
-  SAVEAPPLICATIONNAME: 'REACT_FACTIGISVE_DESA',
-  BUILDFOR: 'INTERNA',
-  SSL: 'http://'
-}
-*/
 
 export default env;
